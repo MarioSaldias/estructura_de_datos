@@ -1,0 +1,37 @@
+class Pila:
+    def __init__(self):
+        self.items=[]
+    def apilar(self,x):
+        self.items.append(x)
+    def desapilar(self):
+        try:
+            return self.items.pop(0)
+        except:
+            raise ValueError("La pila esta vacia")
+    def es_vacia(self):
+        return self.items==[]
+#x=int(input("Ingrese un valor a cargar a la pila: "))
+#prim=int(input("Ingrese un valor primo a cargar a la pila: "))
+p=Pila()
+op=1
+while op!=0:
+    print("--------------------")
+    print("\t\tMENU\t\t")
+    print("(1)Agregar numero a la pila")
+    print("(2)Cargar numero primo a la pila")
+    print("(3)Mostrar cantidad de elementos de la pila")
+    print("(0)Salir")
+    op=int(input("Ingrese una opcion valida: "))
+    if op==1:
+        x=int(input("Ingrese un valor a cargar a la pila: "))
+        p.append(x)
+        print(p)
+    elif op==2:
+        prim=int(input("Ingrese un valor primo a cargar a la pila: "))
+        p.apilar(prim)
+        print(p)
+    elif op==3:
+        print(len(p))
+        
+
+#[]
