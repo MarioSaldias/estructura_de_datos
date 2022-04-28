@@ -1,0 +1,14 @@
+import os
+print("\nCrear un archivo")
+print("===============")
+NOMBRE_ARCHIVO='datos.txt'
+archivo=open(NOMBRE_ARCHIVO, 'w') #abre el archivo datos.txt
+archivo.write('\nINTERBOLIVIA')
+archivo.write('\n                                                   Facturas')
+archivo.write('\n  NIT    |  Numero de autorizacion  |    Nombre    |  CI o Razon social  |        Producto        |  Total a Pagar  |  Codigo de control ')
+archivo.write('\n 48945648| 789784687564156456415644 |Pedro Infante |      8795415664     |Paquete 1 (4-5 personas)|       $450      |   4C-9F-89-10-KL')
+archivo.write('\n 78984565| 789784687564156456415644 |Dwayne Johnson|      7816846313     |Paquete 1 (2-4 personas)|       $650      |   8C-9K-JJ-18-3L')
+archivo.write('\n 48676469| 789784687564156456415644 |Boris Johnson |      1657456789     |Paquete 1 (5-6 personas)|       $1100     |   DL-98-HK-1K-MN')
+archivo.write('\n 78945646| 789784687564156456415644 |Will Smith    |      8794864564     |Paquete 1 (2-3 personas)|       $500      |   F7-21-FK-1W-41')
+archivo.write('\n 75415641| 789784687564156456415644 |Don Ramòn     |      4564564564     |Paquete 1 (1-2 personas)|       $300      |   54-85-GH-7K-QA')
+archivo.close()
