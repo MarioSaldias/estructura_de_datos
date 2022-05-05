@@ -1,0 +1,14 @@
+def guardar_transporte(NOMBRE_ARCHIVO, archivo):
+    import os
+    print("\nCrear un archivo")
+    print("===============")
+    NOMBRE_ARCHIVO='datos.txt'
+    archivo=open(NOMBRE_ARCHIVO, 'w') #abre el archivo datos.txt
+    archivo.write('\nINTERBOLIVIA')
+    archivo.write('\n Transporte')
+    archivo.write('\n Automovil')
+    archivo.write('\n Bus')
+    archivo.write('\n Torito')
+    archivo.write('\n Motocicleta')
+    archivo.write('\n Bicicleta')
+    archivo.close()
