@@ -1,0 +1,18 @@
+def guardar_idiomas(NOMBRE_ARCHIVO, archivo):
+    import os
+    print("\nCrear un archivo")
+    print("===============")
+    NOMBRE_ARCHIVO='datos.txt'
+    archivo=open(NOMBRE_ARCHIVO, 'w') #abre el archivo datos.txt
+    archivo.write('\nINTERBOLIVIA')
+    archivo.write('\n Idiomas')
+    archivo.write('\n Español')
+    archivo.write('\n Ingles')
+    archivo.write('\n Portugues')
+    archivo.write('\n Mandarin')
+    archivo.write('\n Cantones')
+    archivo.write('\n Frances')
+    archivo.write('\n Ruso') #StopWAR
+    archivo.write('\n Aleman')
+    archivo.write('\n Italiano')
+    archivo.close()
