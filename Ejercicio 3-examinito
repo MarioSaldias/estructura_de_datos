@@ -1,0 +1,14 @@
+#Crear un archivo incluyendo los datos de los clientes de una tineda de conveniencia
+import os
+print("\nCrear un archivo")
+print("===============")
+NOMBRE_ARCHIVO='datos.txt'
+archivo=open(NOMBRE_ARCHIVO, 'w')
+archivo.write('\n                                    Tienda de Amiga')
+archivo.write('\n|  CI o Razon social    |  Gènero   | Edad |  Nombre  |  Apellido  | Fecha de Nacimiento|')
+archivo.write('\n|      46876244         | Masculino |  45  |   Juan   |   Pèrez    |      05/03/1977    |')
+archivo.write('\n|      87456453         | Masculino |  21  |  Nicolàs |  Cabrera   |      23/07/2001    |')
+archivo.write('\n|      78945613         | Masculino |  23  |  Manuel  |  Casazola  |      07/11/1999    |')
+archivo.write('\n|      65456156         | Femenino  |  34  |  Mariela |  Sanchèz   |      30/05/1988    |')
+archivo.write('\n|      78945131         | Masculino |  22  |   Josè   |  Martìnez  |      09/10/2000    |')
+archivo.close()
